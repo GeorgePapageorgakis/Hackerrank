@@ -1,0 +1,4 @@
+# Query the details for all the Japanese cities in CITY. The COUNTRYCODE for Japan is JPN.
+select *
+from city
+where countrycode = 'JPN'
