@@ -1,0 +1,2 @@
+![CITY table](https://github.com/GeorgePapageorgakis/Hackerrank/blob/master/SQL/CITY%20table.jpg)
+![Station Table](https://github.com/GeorgePapageorgakis/Hackerrank/blob/master/SQL/Station%20table.jpg)

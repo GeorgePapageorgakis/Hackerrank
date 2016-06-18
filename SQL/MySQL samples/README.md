@@ -1,0 +1,1 @@
+![songs DB Relations](https://github.com/GeorgePapageorgakis/Hackerrank/blob/master/SQL/MySQL%20samples/songs%20DB%20Relations.jpg)
