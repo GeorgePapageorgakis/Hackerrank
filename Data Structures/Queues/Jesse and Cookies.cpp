@@ -4,7 +4,8 @@ Jesse loves cookies. He wants the sweetness of all his cookies to be greater tha
 sweetness = (Least sweet cookie + 2 * 2nd least sweet cookie).
 
 He repeats this procedure until all the cookies in his collection have a sweetness >= k.
-You are given Jesse's cookies. Print the number of operations required to give the cookies a sweetness >= k. Print -1 if this isn't possible.
+You are given Jesse's cookies. Print the number of operations required to give the cookies a sweetness >= k. Print -1 if this isn't possible. 
+The author implies here that the cookies which already have sweetness >= k should not be processed at all...
 Sample Input
 6 7
 1 2 3 9 10 12
@@ -19,6 +20,7 @@ using namespace std;
 
 int calcSweetness (priority_queue<int,vector<int>,greater<int>>& source, int& k){
     int count=0;
+	// repeat this procedure until all the cookies in his collection have a sweetness >= k
     while(source.top() < k) {
         if(source.size() > 1) {
             count++;
@@ -26,7 +28,7 @@ int calcSweetness (priority_queue<int,vector<int>,greater<int>>& source, int& k)
             source.pop();
             int temp2 = source.top();
             source.pop();
-            source.push(temp1 + (temp2 * 2));
+            source.push(temp1 + (temp2 << 1));
         }
         else {
             return -1;
