@@ -63,7 +63,4 @@ int main(){
     cout<<height;
     return 0;
 }
-    
-       
-            
-        
+ 

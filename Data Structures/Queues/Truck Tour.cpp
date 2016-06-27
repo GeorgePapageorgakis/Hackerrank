@@ -37,6 +37,7 @@ int main() {
             idx = i+1;
         }        
     }
+	//we can also add a condition here if we get minimum from last element it means that its the first one and not the N+1.
     cout << idx;
     return 0;
 }
